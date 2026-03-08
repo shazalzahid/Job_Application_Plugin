@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Job Application Helper</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <header class="popup__header">
+        <span class="popup__title">Job Application Helper</span>
+        <button id="openOptions" class="popup__options-btn" title="Open settings">⚙</button>
+      </header>
+
+      <section class="popup__section">
+        <label class="popup__label" for="profileSelect">Profile</label>
+        <select id="profileSelect" class="popup__select"></select>
+      </section>
+
+      <button id="fillButton" class="popup__primary-btn">
+        Fill from profile
+      </button>
+
+      <p id="status" class="popup__status"></p>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+  </html>
+

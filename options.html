@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Job Application Helper – Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="page__header">
+        <h1>Job Application Helper</h1>
+        <p>Manage profiles used to fill job application forms.</p>
+      </header>
+
+      <section class="panel">
+        <div class="panel__header">
+          <h2>Profiles</h2>
+          <button id="addProfile" class="btn btn--primary">New profile</button>
+        </div>
+        <div id="profilesList" class="profiles"></div>
+      </section>
+    </main>
+
+    <template id="profileTemplate">
+      <article class="profile">
+        <div class="profile__header">
+          <input class="profile__label" placeholder="Profile label (e.g. Software Engineer)" />
+          <button class="btn btn--ghost btn--sm js-delete-profile">Delete</button>
+        </div>
+        <div class="grid">
+          <label class="field">
+            <span>Full name</span>
+            <input class="js-fullName" />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input class="js-email" />
+          </label>
+          <label class="field">
+            <span>Phone</span>
+            <input class="js-phone" />
+          </label>
+          <label class="field">
+            <span>Location</span>
+            <input class="js-location" />
+          </label>
+          <label class="field">
+            <span>Headline / Title</span>
+            <input class="js-headline" />
+          </label>
+          <label class="field">
+            <span>LinkedIn URL</span>
+            <input class="js-linkedIn" />
+          </label>
+          <label class="field">
+            <span>GitHub URL</span>
+            <input class="js-github" />
+          </label>
+          <label class="field">
+            <span>Portfolio URL</span>
+            <input class="js-portfolio" />
+          </label>
+        </div>
+        <label class="field field--full">
+          <span>Summary / About you</span>
+          <textarea class="js-summary" rows="3"></textarea>
+        </label>
+      </article>
+    </template>
+
+    <script type="module" src="options.js"></script>
+  </body>
+  </html>
+
